@@ -1,0 +1,317 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1216px;
+}
+
+.title-container {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary);
+
+}
+
+.title-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding: 0px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
+  border-bottom: 1px dashed var(--primary);
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.department-menu li {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0; 
+  font-size: 15px;
+  font-weight: 400;
+}
+.department-menu a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+button {
+  font-family: ProximaNova,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 4px;
+  border: none;
+  justify-content: center;
+  max-width: 88px;
+  min-height: 28px;
+  padding: 5px 10px;
+}
+
+.button_submit {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.button_recruitment {
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Tuyển dụng */
+.positions {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
+  border-bottom: 1px dashed var(--primary);
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.positions-list {
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 20px;
+  padding: 3px;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+.positions-list:hover .item-recruit {
+      display: flex;
+}
+
+.label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: #f0ad4e;
+}
+
+.item-date {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.title-position {
+  font-size: 16px;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.text-position {
+  font-size: 14px;
+}
+
+.group-btn-recruit {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.item-recruit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+  align-items: center;
+}
+
+.detail {
+  margin: 8px;
+}
+.register {
+  margin: 8px;
+}
+
+/* From ứng tuyển */
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+}
+
+.open {
+  display: flex;
+}
+
+.modal-content {
+  position: absolute;
+  top: 5%;
+  width: 600px;
+  z-index: 1000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+  animation: content ease 0.6s;
+}
+
+@keyframes content {
+  from {
+      opacity: 0.6;
+      transform: translateY(-120px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes closeContent {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 0.6;
+      transform: translateY(-120px);
+  }
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.button-close {
+  position: absolute;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #938e8e;
+  overflow: visible;
+  border: none;
+  background-color: white;
+  padding: 5px 8px;
+ 
+}
+.button-close:hover {
+  color: var(--white);
+  cursor: pointer;
+  background-color: rgb(247, 33, 5);
+}
+
+.modal-title {
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+
+.input-name {
+  width: 25%;
+  align-self: center;
+  justify-content: flex-end;
+  display: flex;
+  padding: 7px 15px 0;
+  font-weight: 600;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.box-input {
+  padding: 0 15px;
+  width: 75%;
+}
+.input-btn {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-submit {
+  margin-left: 25%;
+  padding-left: 15px;
+}
+
+.button-btn {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}

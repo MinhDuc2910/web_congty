@@ -1,0 +1,279 @@
+:root {
+  --random: 
+}
+
+img {
+  width: 100%;
+}
+
+.main-container {
+  /* width: 1170px; */
+  max-width: 1216px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  color: var(--text-color);
+  /* border-bottom: 1px dashed var(--primary); */
+}
+
+
+.box-style {
+  
+}
+
+.title-container {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary);
+  width: 100%;
+
+}
+
+.title-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding: 0px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.style-container {
+  width: 100%;
+  margin-right: 30px;
+  display: flex;
+}
+
+.box-style {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-left: 5px solid var(--primary);
+}
+
+.style {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 10px;
+}
+.icon-style {
+  font-size: 40px;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  line-height: 80px;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  text-align: center;
+  border-radius: 50%;
+}
+
+.title-style {
+  color: var(--primary);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.text-style {
+  font-size: 1.075rem;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  position: absolute;
+  top: 0;
+  right: 0;
+} 
+
+.owl-dot {
+  margin-right: 3px!important;
+}
+
+.owl-dot span {
+  width: 15px!important;
+  height: 15px!important;
+  margin-right: 5px;
+  border-radius: 50%;
+  margin: 0 auto!important;
+  background-color: rgba(127,127,127, 0.5)!important;
+  
+}
+.owl-dot.active span {
+  background: var(--primary)!important;
+}
+
+/* Phần giới thiệu */
+.introduce {
+  width: 100%;
+  /* background-color: #e9f0f5; */
+}
+
+.box_introduce {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 20px;
+}
+
+.image-block {
+  width: 22%;
+  margin-right: 30px;
+  display: flex;
+}
+
+.image-block img {
+  border: 1px solid #cbf5e8;
+  box-shadow: 2px 10px 20px rgb(0 180 131 / 25%);
+}
+.content-block {
+  width: 78%;
+}
+
+.content-block h2 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.content-block p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Email */
+
+/* Product */
+.product_introduce {
+  max-width: 1216px;
+  margin: 0 auto;
+  margin-top: 3rem ;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--orange);
+}
+
+.product_introduce .col-4{
+  padding: 0;
+}
+
+.product_introduce .col-6 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 0;
+  padding-left: 1.5rem;
+}
+
+.image_product {
+  height: 296px;
+  width: 100%;
+  border-radius: 1.3rem;
+}
+
+.title_product {
+  text-transform: uppercase;
+  color: rgba(128,128,128, 1);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+
+}
+.content_product {
+  color: var(--orange); 
+  font-size: 2.25rem;
+  font-weight: bold;
+
+}
+
+.box-image_product {
+  margin-bottom: 1rem;
+  border-radius: 1.3rem;
+  position: relative;
+  transition: all 0.6s linear;
+
+}
+
+.detail  {
+  position:absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(14,165,233, 0.3);
+  border-radius: 1.3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #cbf5e8;
+  box-shadow: 2px 10px 20px rgb(0 180 131 / 25%);
+}
+.zalo {
+  background-color: rgba(29 ,78 ,216, 0.3);
+} 
+.text_detail {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.detail_hover  {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: rgba(14,165,233, 0.8);
+    border-radius: 1.3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.zalo_hover {
+  background-color: rgba(29 ,78 ,216, 0.8);
+}
+.box-image_product:hover .detail_hover {
+  display: flex;
+  
+}
+.box-image_product:hover .detail {
+  display: none;
+}
+
+/* Con người */
+.people {
+  max-width: 1216px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+img.image_people {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+/* Cuộc sống */
+.life {
+  color: rgba(128 ,128 ,128, 0.9);
+  font-style: italic;
+}
+.title_life {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  
+}
+.content_life {
+  font-size: 1.13rem;
+  line-height: 1.75rem;
+}

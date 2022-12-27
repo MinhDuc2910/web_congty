@@ -1,0 +1,17 @@
+div#wrapper\ {
+  background-image: url("../images/ggame.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#form_login {
+  padding-top: 10%;
+}
+.from {
+  border-radius: 5px;
+}
+.help {
+  text-align: end;
+  margin-bottom: 20px;
+}
